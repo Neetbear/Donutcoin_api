@@ -15,8 +15,8 @@ dotenv.config();
 const USER = process.env.RPC_USER;
 const PASS = process.env.RPC_PASSWORD;
 const PORT = 9776;
-const ACCOUNT = "kbpark";
-const ID_STRING = "kigacoin_id";
+const ACCOUNT = "parkisak";
+const ID_STRING = "donutcoin_id";
 const headers = {
     "content-type": "text/pliain;"
 };
@@ -36,7 +36,7 @@ app.get('/stop', function (req, res) {
 app.post('/stop_result', (req, res) => {
     var dataString = `{"jsonrpc":"1.0","id":"${ID_STRING}","method":"stop","params":[]}`;
     var options = {
-        url: `http://${USER}:${PASS}@127.0.0.1:${PORT}/`,
+        url: `http://${USER}:${PASS}@13.124.19.24:${PORT}/`,
         method: "POST",
         headers: headers,
         body: dataString
