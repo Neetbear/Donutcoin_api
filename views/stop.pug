@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title stop API
+  body
+    include includes/header.pug
+    form(action="stop_result" method="post")
+        p
+            |STOP :
+        input(type="submit" value="stop")
+    include includes/footer.pug

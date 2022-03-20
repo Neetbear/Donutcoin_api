@@ -1,0 +1,45 @@
+doctype html
+html(lang="ko")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="Content-Type", content="text/html")
+        title Kigacoin api examples
+        style. 
+            .title {
+                color: purple;
+            }
+            .footer {
+                color: purple;
+            }
+            #header {
+                margin-bottom: 48px;
+            }
+        script. 
+            console.log("This is log");
+    body 
+        #header
+            h1.title kigacoin API tutorial
+        #main
+            div#api(style="color:red;") kigacoin API List 
+                ul 
+                    li: a(href='/getblockcount') getblockcount
+                    li: a(href='/getnetworkinfo') getnetworkinfo
+                    li: a(href='/getaccountaddress') getaccountaddress
+                    li: a(href='/getaddressesbyaccount') getaddressesbyaccount
+                    li: a(href='#') addmultisigaddress
+                    li: a(href='#') addnode
+                    li: a(href='#') backupwallet
+                    li: a(href='#') bannode
+                    li: a(href='#') createmultisig
+                    li: a(href='#') createrawtransaction
+                    li: a(href='#') decoderawtransaction
+                    li: a(href='/dumpprivkey') dumpprivkey
+                    li: a(href='/dumpwallet') dumpwallet
+                    li: a(href='#') encryptwallet
+                    li: a(href='/getaccount') getaccount
+                    li: a(href='#') getaddednodeinfo
+                    li: a(href='/getbalance') getbalance
+                    li: a(href='/getbestblockhash') getbestblockhash
+                    li: a(href='#') getblock
+        #footer
+            p.footer This is kigacoin API Tutorial

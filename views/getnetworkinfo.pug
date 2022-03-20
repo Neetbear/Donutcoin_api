@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+    head
+        title getnetworkinfo API
+    body 
+        include includes/header.pug
+        form(action="getnetworkinfo_result" method="post")
+            p
+                |NETWORKINFO :
+            input(type="submit" value="getnetworkinfo")
+        include includes/footer.pug

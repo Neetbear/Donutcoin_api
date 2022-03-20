@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+    head
+        title getaccountaddress API
+    body 
+        include includes/header.pug
+        form(action="getaccountaddress_result" method="post")
+            p
+                |ACCOUNT :
+                input(type="text" name="account")
+            input(type="submit" value="getaccountaddress")
+        include includes/footer.pug

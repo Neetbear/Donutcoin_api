@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+    head
+        title getaddressesbyaccount API
+    body 
+        include includes/header.pug
+        form(action="getaddressesbyaccount_result" method="post")
+            p
+                |ACCOUNT :
+                input(type="text" name="account")
+            input(type="submit" value="getaddressesbyaccount")
+        include includes/footer.pug
