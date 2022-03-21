@@ -51,6 +51,8 @@ app.post('/stop_result', (req, res) => {
     request(options, callback);
 });
 
-app.listen(9000, function() {
-    console.log("kigacoin API Tutorial is running apt http://localhost:9000/");
+const host = '127.0.0.1';
+
+app.listen(9000, host, function() {
+    console.log(`donutcoin API Tutorial is running apt http://${host}::9000/`);
 });
