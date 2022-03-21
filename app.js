@@ -51,6 +51,6 @@ app.post('/stop_result', (req, res) => {
     request(options, callback);
 });
 
-app.listen(3000, function() {
-    console.log("kigacoin API Tutorial is running apt http://localhost:3000/");
+app.listen(9000, function() {
+    console.log("kigacoin API Tutorial is running apt http://localhost:9000/");
 });
