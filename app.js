@@ -51,7 +51,7 @@ app.post('/stop_result', (req, res) => {
     request(options, callback);
 });
 
-const host = '127.0.0.1';
+const host = '13.124.19.24';
 
 app.listen(9000, host, function() {
     console.log(`donutcoin API Tutorial is running apt http://${host}::9000/`);
